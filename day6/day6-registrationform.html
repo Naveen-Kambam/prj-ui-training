@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>Registration Form</h1>
+        </header>
+        <body>
+            <main>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div>
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" placeholder="Enter First Name" name="firstname" />
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" placeholder="Enter Last Name" name="lastname" />
+                        </div>
+                        <div>
+                            <label for="username">User Name</label>
+                            <input type="text" id="username" placeholder="Enter User Name" name="username" required />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter Email" name="email" required />
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter Password" name="password" required />
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword" required />
+                        </div>
+                        <div>
+                            <label for="telephone">Mobile Number</label>
+                            <input type="tel" id="usertel" placeholder="Enter Mobile Number" name="useremail" required />
+                        </div>
+                        <div>
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <div>
+                            <label for="bank">Select Bank</label>
+                            <select name="bank" id="bank">
+                                <option>Select your Bank</option>
+                                <option value="SBI">SBI</option>
+                                <option value="HDFC">HDFC</option>
+                                <option value="IOB">IOB</option>
+                                <option value="BOI">BOI</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="bankIfsc">IFSC Code</label>
+                            <input type="text" id="bankIfsc" placeholder="Enter IFSC Code" name="bankIfsc" />
+                        </div>
+                        <div>
+                            <label for="accountNumber">Account Number</label>
+                            <input type="text" id="accountNumber" placeholder="Enter Account Number" name="accountNumber" />
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input type="submit" />
+                        <input type="reset" />
+                    </div>
+                </form>
+            </main>
+        </body>
+    </body>
+</html>

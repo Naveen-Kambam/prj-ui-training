@@ -49,6 +49,10 @@
                     <input type="range" min="0" max="10" step="2"/>
                 </div>
                 <div>
+                    <label>Enter datetime-local</label>
+                    <input type="datetime-local" name="datetime"/>
+                </div>
+                <div>
                     <label>Enter date</label>
                     <input type="date"  value="" min="2023-02-13"/>
                 </div>
@@ -71,18 +75,18 @@
                 <fieldset>
                     <legend>Select Gender</legend>
                     <label for="male">Male</label>
-                    <input id="male" type="radio" name="gender"/>
+                    <input id="male" type="radio" name="gender" value="male"/>
                     <label for="female">Female</label>
-                    <input id="female "type="radio" name="gender"/>
+                    <input id="female "type="radio" name="gender" value="female"/>
                 </fieldset>
                 <fieldset>
                     <legend>Select your favourite color</legend>
                     <label for="red">Red</label>
-                    <input id="red" type="checkbox" name="color" />
+                    <input id="red" type="checkbox" name="color" value="red"/>
                     <label for="green">Green</label>
-                    <input id="green" type="checkbox" name="color" />
+                    <input id="green" type="checkbox" name="color" value="green"/>
                     <label for="blue">Blue</label>
-                    <input id="blue" type="checkbox" name="color" />
+                    <input id="blue" type="checkbox" name="color" value="blue"/>
                 </fieldset>
                 <label for="brand">Brand</label>
                 <select name="favbrand" id="brand" multiple>
@@ -91,6 +95,8 @@
                     <option value="samsung">samsung</option>
                     <option value="oneplus">Oneplus</option>
                 </select>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" name="text"></textarea>
                 <input type="submit" />
                 <input type="reset" />
                 <button>
