@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardsList {
+    background: #e0ffff;
+    padding: 5px;
+    font-size: 12px;
+    color: #000;
+    align-content: center;
+}
+
+.cardsList > section {
+    display: block;
+    margin: 5px;
+}
+
+.cardsList--simple .cardsList__simpleCard{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+}
+
+.cardsList__simpleCard img{
+    width: 300px;
+    height: 200px;
+}
+.cards__info {
+    margin-bottom: 10px;
+}
+
+.cards__info > p{
+    display: inline; 
+}
+
+.cards__info--decorated {
+    color: #ffa500;
+    margin-right: 120px;
+}
