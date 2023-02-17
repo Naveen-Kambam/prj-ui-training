@@ -1,0 +1,57 @@
+*{
+    padding: 2px;
+    margin: 2px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+header h1 {
+    font-weight: 500;
+}
+h2{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+p{
+    font: 18px/30px 'Sofia', Arial;
+    padding: 10px;
+}
+
+.text-color-rgb {
+    color: rgb(170, 20, 35);
+}
+
+.text-color-rgba {
+    color: rgba(170, 20, 35, 0.5);
+}
+
+.text-color-hsl {
+    color: hsl(0, 60%, 50%);
+}
+
+.text-color-hsla {
+    color: hsla(0, 60%, 50%, 0.5);
+} 
+.text-decoartion {
+    color: #858;
+    border: none;
+    width: auto;
+    text-decoration: underline overline #000 dashed 2px;
+}
+
+.text-alignment {
+    text-align: center;
+}
+
+.text-letter-spacing {
+    letter-spacing: 5px;
+    text-align: right;
+}
+
+.text-word-spacing {
+    word-spacing: 10px;
+}

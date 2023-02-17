@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heroImage {
+    background-color: #f5f5dc;
+    border: 1px solid #808080;
+    padding: 20px 30px;
+}
+
+.heroImage > section {
+    display: inline-block;
+    font-size: 18px;
+    color: #000;;
+}
+
+.heroImage .heroImageContainer {
+    height: 300px;
+    margin-right: 30px;
+}
+
+.heroImage .heroImageContainer img{
+    height: 300px;
+    width: auto;
+}
+
+.heroImage .heroImageContent h2{
+    font-size: 24px;
+    color: #0000ff;
+}
+
+.heroImage .heroImageContent ul li {
+    list-style-type: circle;
+}
+
+.heroImageContent > a {
+    display: inherit;
+    border-radius: 10px;
+    background: #0000ff;
+    color: #fff;
+    padding: 5px 25px;
+    margin: 10px;
+}

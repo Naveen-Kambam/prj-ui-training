@@ -1,0 +1,41 @@
+div > p {
+    color: red;
+}
+
+h1 + p {
+    color: blueviolet;
+}
+
+section ~ article {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.selector-elements  * {
+    margin: 5px;;
+    display: inline-block;
+}
+
+input[type="text"] {
+    border: 2px solid #ffa500;
+}
+
+a[title="Empty"]{
+    color: #696969;
+}
+
+a[href="abc.html"] {
+    color: #ff0000;
+}
+
+a[href ^= "https"] {
+    color: #008000;
+}
+
+a[href *= "jpeg"] {
+    color: #ffa500;
+}
+
+a[href $=".pdf"] {
+    color: #a52a2a;
+} 
