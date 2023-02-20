@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{ 
+    --primary-color: #000;
+    --font-family: arial;
+    --secondary-color: red;
+    --display-flex: flex;
+    --ten-px-value: 10px;
+}
+
+body {
+    font: 18px var(--font-family);
+    margin: 0 auto;
+}
+
+main {
+    padding: var(--ten-px-value);
+    background-color: #add8e6;
+}
+section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: var(--ten-px-value);
+}
+
+h1 + p {
+    margin-bottom: 30px;
+}
+
+main > section:first-child {
+    display: var(--display-flex);
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-me > h2, .portfolio > h2, .experience > h2 {
+    text-align: center;
+    margin-bottom: var(--ten-px-value);
+}
+
+.about-me > p{
+    margin-bottom: 20px;
+}
+
+.portfolio > section, .experience > section{
+    display: var(--display-flex);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.experience > section > div {
+    margin-bottom: var(--ten-px-value);
+}
+
+section > form {
+    display: var(--display-flex);
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+form > * {
+    width: 100%;
+}
+
+input:is([type=text], [type=email]), textarea{
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 2px;
+    height: 28px;
+    margin-bottom: var(--ten-px-value);
+}
+
+form > button {
+    border-radius: 5px;
+    padding: var(--ten-px-value);
+}
+
+
+@media screen and (min-width:992px){
+    h1 {
+        font-size: 72px;
+    }
+
+    main > section:first-child {
+        flex-direction: row;
+    }
+
+    form > * {
+        width: 50%;
+    }
+}
