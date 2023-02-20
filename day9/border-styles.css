@@ -1,0 +1,48 @@
+button{
+    width: 100px;
+    height: 100px;
+}
+
+.button1 {
+    border: 0;
+}
+
+.button2 {
+    border-width: 5px;
+}
+
+.button3 {
+    border-style: solid;
+}
+
+.button4 {
+    border-color: red;
+}
+
+.button5 {
+    border: 5px solid red;
+}
+
+.button6 {
+    border-top: 5px solid blue;
+}
+
+.button7 {
+    border-bottom: 5px solid blue;
+}
+
+.button8 {
+    border-top-width: 10px;
+}
+
+.button9 {
+    border-top-color: green;
+}
+
+.button10 {
+    border-top-left-radius: 30%;
+}
+
+.button11 {
+    border-radius: 30px;
+}
