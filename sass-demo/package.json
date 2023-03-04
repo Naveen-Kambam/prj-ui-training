@@ -1,0 +1,13 @@
+{
+  "name": "sass-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass --watch resources/sass/header.scss styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.call-to-action {
+    background-color: antiquewhite;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.call-to-action  > img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.call-to-action > section {
+    width: 50%;
+    padding: 50px 50px 0 50px;
+}
+
+.call-to-action > section > span{
+    float: right;
+    cursor: pointer;
+}
+
+.call-to-action > section > h2 {
+    margin-bottom: 20px;
+}
+
+.call-to-action > section > p {
+    margin-bottom: 5px;
+}
+
+.call-to-action--price {
+    font-size: 40px;
+}
+
+.call-to-action > section > form {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.call-to-action--form > div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-to-action--form > div > input {
+    line-height: 30px;
+}
+
+.call-to-action--form > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    background: grey;
+    height: 30px;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.call-to-action--form > a {
+    color: black;
+}
+
+.call-to-action--form > .call-to-action--form__mandatory {
+    margin-top: 40px;
+}
+
+.call-to-action--form > .call-to-action__form--mandatory {
+    margin-top: 40px;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .call-to-action {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .call-to-action  > img {
+        width: 100%;
+    }
+
+    .call-to-action > section {
+        padding: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+}
