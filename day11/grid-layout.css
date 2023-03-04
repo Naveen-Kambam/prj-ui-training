@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grid-template-home : 'header header header'
+                            'main main main'
+                            'footer footer footer';
+
+    --grid-template-aboutus : 'header header header'
+                            'sidenav mid-container mid-container'
+                            'sidenav mid-container mid-container'
+                            'footer footer footer';
+}
+
+.wrapper {
+    display: grid;
+    grid-template: var(--grid-template-aboutus);
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.mid-container {
+    grid-area: mid-container;
+}
+
+footer {
+    grid-area: footer;
+}
