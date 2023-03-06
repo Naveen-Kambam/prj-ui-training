@@ -1,0 +1,46 @@
+nav {
+    background-color: rgba(248, 249, 250, 1);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.container {
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+}
+
+.navbar-nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar-nav > a {
+        border: 1px solid black;
+    }
+}
