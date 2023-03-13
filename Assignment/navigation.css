@@ -1,14 +1,19 @@
+:root {
+    --ten-pixel : 10px;
+}
+
+
 nav {
     background-color: rgba(248, 249, 250, 1);
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 10px;
+    padding: var(--ten-pixel);
     justify-content: space-between;
 }
 
 .container {
-    margin-right: 10px;
+    margin-right: var(--ten-pixel);
 }
 
 .navbar-toggler {
@@ -22,7 +27,7 @@ nav {
 .navbar-nav > a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: var(--ten-pixel);
 }
 
 @media screen and (max-width: 768px) {
@@ -32,7 +37,7 @@ nav {
     }
 
     .navbar-nav {
-        display: flex;
+        display: none;
         position: absolute;
         flex-direction: column;
         top: 60px;
@@ -41,6 +46,11 @@ nav {
     }
 
     .navbar-nav > a {
-        border: 1px solid black;
+        border: 1px solid #000;
+    }
+
+    .navbar-toggler:hover + .navbar-nav {
+        display: flex;
+        background: #fff;
     }
 }
