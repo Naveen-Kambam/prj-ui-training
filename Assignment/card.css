@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+:root {
+    --border-radius: 5px;
+    --background--color:  #0d6efd;
+    --ten-pixel : 10px;
+}
+
 .row {
     width: 80%;
     display: flex;
@@ -31,23 +37,23 @@
 
 .card-body h5{
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: var(--ten-pixel);
 }
 
 .card-body p {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: var(--ten-pixel);;
     line-height: 20px;
 }
 
 .card-body a {
     display: inline-block;
-    padding: 10px;
+    padding: var(--ten-pixel);
     text-align: center; 
-    border: 1px solid #0d6efd;
-    border-radius: 5px;
-    background: #0d6efd;
-    color: white;
+    border: 1px solid var(--background--color);
+    border-radius: var(--border-radius);
+    background: var(--background--color);
+    color: #fff;
     text-decoration: none;
 }
 

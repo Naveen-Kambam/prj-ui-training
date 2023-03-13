@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    font-family: 'Roboto Slab';
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+p {
+    font-size: 14px;
+}
+
+.card {
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 6px gray;
+}
+
+.card-details {
+    display: flex;
+    border-bottom: 1px solid #787575;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.movie-category {
+    font-size: 32px;
+}
+
+.movie-subCategory {
+    font-size: 20px;
+}
+
+.cards-icons {
+    display: flex;
+}
+
+.cards-icons > img:first-child {
+    margin-right: 20px;
+}
+
+.cards-icons > img:last-child {
+    margin-left: 20px;
+}
+
+.movie-price {
+    text-align: center;
+    font-size: 24px;
+}
+
+.movie-tickets {
+    text-align: center;
+    top: 10px;
+    position: relative;
+}
+
+.text-grey {
+    color: #787575;
+}
+
+.mg10 {
+    margin-bottom: 10px;
+}
+
+.cards-icons > img {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+}
