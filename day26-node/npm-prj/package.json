@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo for node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:eslint": "eslint --fix",
+    "lint:prettier": "prettier --write",
+    "lint": "npm run lint:eslint && npm run lint:prettier"
+  },
+  "author": "naveen",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "prettier": "^2.8.5"
+  }
+}

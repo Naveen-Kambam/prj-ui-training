@@ -1,0 +1,22 @@
+// 1. index.js - holding the logic of your package
+// 2. readme.md
+// 3. .gitignore
+// 4. npm init  (package.json)
+//    name 
+//    version
+//    keywords
+
+// 5. npm login
+//      - username
+//   - password
+//   - emailid
+
+// 6. npm publish
+
+
+
+
+// account npm.js
+//   - username
+//   - password
+//   - emailid

@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ 
+ <html>
+    <head>
+        <title>WEB API</title>
+    </head>
+    <body>
+        <div draggable="true" id="draggable">Drag me!!</div>
+        <div id="droppable">Drop Area</div>
+        
+        <p>Lattitude: <span id="lattitude"></span></p>
+        <p>Longitude: <span id="longitude"></span></p>
+        
+        <canvas id="myCanvas"></canvas>
+        
+        <h2>Storage demo</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name"/>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email"/>
+        
+        <button id="saveButton">Save Data</button>
+        <button id="loadButton">Load Data</button>
+        
+        
+        <button id="workerButton">Start Worker</button>
+        <p>Result: <span id="result"> </span></p>
+
+        <script src="./script.js"></script>
+        <script src="./worker.js"></script>
+    </body>
+ </html>

@@ -1,0 +1,12 @@
+body {
+  background-color: orange;
+
+  nav {
+    position: absolute;
+    height: 88px;
+    left: 0px;
+    right: 0px;
+    top: calc(50% - 88px / 2 + 0.24px);
+    background: #ffffff;
+  }
+}
