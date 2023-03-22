@@ -1,0 +1,86 @@
+.product-details {
+  display: flex;
+  top: 88px;
+  position: relative;
+  gap: 48px;
+  margin-bottom: 263px;
+  padding-left: 63px;
+}
+
+.product-details > img {
+  height: 685px;
+  width: 550px;
+  left: 63px;
+  top: 166px;
+  border-radius: 0px;
+}
+
+.product-details > div > p {
+  font-family: Arimo;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #888888;
+  margin-bottom: 16px;
+}
+
+.current {
+  color: #1d1d1d;
+}
+
+.product-details > div > h3 {
+  font-family: "Arimo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #1d1d1d;
+  margin-bottom: 12px;
+}
+
+.price-list > p {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #818181;
+}
+
+.price-list > p > .latest {
+  color: #024e82;
+}
+
+.product-description {
+  font-size: 16px !important;
+  line-height: 19px !important;
+  color: #555555 !important;
+  margin-bottom: 36px;
+}
+
+.product-details > div > select {
+  width: 210px;
+  height: 48px;
+  left: 661px;
+  top: 469px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+  display: block;
+  margin-bottom: 36px;
+}
+
+.product-details > div > button {
+  width: 165px;
+  height: 48px;
+  left: 661px;
+  top: 553px;
+  background: #024e82;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.tags > p > span {
+  color: #888888;
+}

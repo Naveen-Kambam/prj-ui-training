@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Assignment/navigation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./product.css" />
   </head>
   <body>
     <header>
@@ -18,30 +25,46 @@
             />
           </a>
         </div>
-        <div class="">
-          <img class="navbar-toggler" src="./resources/images/usericon.svg" />
-          <img class="navbar-toggler" src="./resources/images/cart.svg" />
-          <img class="navbar-toggler" src="./resources/images/hamburger.svg" />
-        </div>
         <div class="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
         </div>
+        <div class="nav-icons">
+          <img
+            src="./resources/images/usericon.svg"
+            width="18px"
+            height="18px"
+          />
+          <a href="./cart.html"
+            ><img src="./resources/images/cart.svg" width="18px" height="18px"
+          /></a>
+          <img
+            class="navbar-toggler"
+            src="./resources/images/hamburger.svg"
+            width="18px"
+            height="18px"
+          />
+        </div>
       </nav>
     </header>
     <main>
-      <div class="product">
+      <div class="product-details">
         <img src="./resources/images/products/product-1.jpg" />
         <div>
-          <p>home / shop / women / shop</p>
+          <p>HOME / SHOP / WOMEN / <span class="current">SHOP</span></p>
           <h3>Plain White Shirt</h3>
-          <div></div>
-          <div class="price-list">
-            <p>$69.00</p>
-            <p>$59.00</p>
+          <div>
+            <img src="./resources/images/products/icon.svg" />
+            <img src="./resources/images/products/icon.svg" />
+            <img src="./resources/images/products/icon.svg" />
+            <img src="./resources/images/products/icon.svg" />
+            <span>(15)</span>
           </div>
-          <p>
+          <div class="price-list">
+            <p><s>$69.00</s> <span class="latest">$59.00</span></p>
+          </div>
+          <p class="product-description">
             A classic t-shirt never goes out of style. This is our most premium
             collection of shirt. This plain white shirt is made up of pure
             cotton and has a premium finish.
@@ -50,7 +73,10 @@
             <option value="">Select Size</option>
           </select>
           <button>ADD TO CART</button>
-          <p>Category: Women, Polo, Casual Tags: Modern, Design, cotton</p>
+          <div class="tags">
+            <p>Category: <span>Women, Polo, Casual</span></p>
+            <p>Tags: <span>Modern, Design, cotton</span></p>
+          </div>
           <div class="colors"></div>
         </div>
       </div>
@@ -77,7 +103,7 @@
       </div>
     </main>
     <footer>
-      <div>
+      <div class="quickLinks">
         <div>
           <h4>COMPANY INFO</h4>
           <ul>

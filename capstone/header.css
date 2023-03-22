@@ -1,5 +1,42 @@
 .herobanner {
-  width: 1366px;
   height: 648px;
   background: url(./resources/images/herobanner/herobanner.jpg);
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.contact {
+  height: 348px;
+  background: url(./resources/images/contact/contact-us-banner.jpg);
+}
+
+.herobanner-header {
+  height: 104px;
+  width: 492.42095947265625px;
+  left: 770.02734375px;
+  top: 296px;
+  font-size: 48px;
+  position: absolute;
+}
+
+.herobanner-shopnow {
+  position: absolute;
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  top: 400px;
+  border: 2px solid;
+  text-decoration: none;
+  text-align: center;
+  right: 282px;
+  color: #ffffff;
+  padding: 5px;
 }

@@ -1,56 +1,89 @@
 :root {
-    --ten-pixel : 10px;
+  --ten-pixel: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 nav {
-    background-color: rgba(248, 249, 250, 1);
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: var(--ten-pixel);
-    justify-content: space-between;
+  background-color: rgba(248, 249, 250, 1);
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: var(--ten-pixel);
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 88px;
+  box-sizing: border-box;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  z-index: 1;
 }
 
-.container {
-    margin-right: var(--ten-pixel);
-}
-
-.navbar-toggler {
-    display: none;
+.navbar-brand {
+  padding: 22px 0 22px 65px;
 }
 
 .navbar-nav {
-    flex-grow: 1;
+  /* flex-grow: 1; */
+  padding-left: 140px;
+}
+
+.nav-icons {
+  right: 0;
+  position: fixed;
+}
+
+.nav-icons > img,
+.nav-icons > a {
+  padding-right: 37px;
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-nav {
+  /* flex-grow: 1; */
 }
 
 .navbar-nav > a {
-    text-decoration: none;
-    color: black;
-    padding: var(--ten-pixel);
+  text-decoration: none;
+  color: black;
+  padding: var(--ten-pixel);
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-toggler {
-        display: block;
-        cursor: pointer;
-    }
+  .navbar-toggler {
+    display: block;
+    cursor: pointer;
+  }
 
-    .navbar-nav {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        top: 60px;
-        width: 100%;
-        left: 0;
-    }
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    width: 100%;
+    left: 0;
+  }
 
-    .navbar-nav > a {
-        border: 1px solid #000;
-    }
+  .navbar-nav > a {
+    border: 1px solid #000;
+  }
 
-    .navbar-toggler:hover + .navbar-nav {
-        display: flex;
-        background: #fff;
-    }
+  .navbar-toggler:hover + .navbar-nav {
+    display: flex;
+    background: #fff;
+  }
 }

@@ -4,6 +4,14 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Assignment/navigation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./about-header.css" />
+    <link rel="stylesheet" type="text/css" href="./contact-us.css" />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
   </head>
   <body>
     <header>
@@ -18,24 +26,32 @@
             />
           </a>
         </div>
-        <div class="">
-          <img class="navbar-toggler" src="./resources/images/usericon.svg" />
-          <img class="navbar-toggler" src="./resources/images/cart.svg" />
-          <img class="navbar-toggler" src="./resources/images/hamburger.svg" />
-        </div>
         <div class="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
         </div>
+        <div class="nav-icons">
+          <img
+            src="./resources/images/usericon.svg"
+            width="18px"
+            height="18px"
+          />
+          <a href="./cart.html"
+            ><img src="./resources/images/cart.svg" width="18px" height="18px"
+          /></a>
+          <img
+            class="navbar-toggler"
+            src="./resources/images/hamburger.svg"
+            width="18px"
+            height="18px"
+          />
+        </div>
       </nav>
     </header>
     <main>
-      <div class="herobanner">
-        <h2 class="herobanner-header">STYLIST PICKS BEAT THE HEAT</h2>
-        <a class="herobanner-shopnow" href="./single_product_woman.html"
-          >CONTACT US</a
-        >
+      <div class="herobanner contact">
+        <h2 class="herobanner-header">CONTACT US</h2>
       </div>
       <div class="contact-us">
         <form method="post" action="#">
@@ -45,7 +61,7 @@
               If you have any query or any type of suggestion, you can contact
               us here. We would love to hear from you.
             </p>
-            <div>
+            <div class="user-details">
               <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" />
@@ -55,7 +71,7 @@
                 <input type="email" id="email" />
               </div>
             </div>
-            <div>
+            <div class="user-message">
               <label for="message">Message</label>
               <textarea id="message"></textarea>
             </div>
@@ -68,17 +84,15 @@
             </div>
             <div>
               <h4>Get In Touch</h4>
-              <p>
-                You can get in touch with us on this provided email. Email:
-                hmjawad087@gmail.com
-              </p>
+              <p>You can get in touch with us on this provided email</p>
+              <p>Email: hmjawad087@gmail.com</p>
             </div>
           </div>
         </form>
       </div>
     </main>
     <footer>
-      <div>
+      <div class="quickLinks">
         <div>
           <h4>COMPANY INFO</h4>
           <ul>

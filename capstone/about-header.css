@@ -1,0 +1,146 @@
+.herobanner {
+  height: 348px;
+  background: url(./resources/images/about/about-us.jpg);
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+.contact {
+  height: 348px;
+  background: url(./resources/images/contact/contact-us-banner.jpg);
+}
+
+.herobanner-header {
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  top: 270px;
+  left: 63px;
+}
+
+.features {
+  display: flex;
+  margin-top: 89px;
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+.features > div:first-child {
+  margin-right: 20px;
+}
+
+.features > div > a {
+  padding: 14px 36px 14px 36px;
+  top: -60px;
+  left: 202px;
+  position: relative;
+  text-decoration: none;
+  background: white;
+  border-radius: 26px;
+  color: #14517b;
+}
+
+.founders {
+  margin-bottom: 140px;
+}
+
+.founders > h3 {
+  font-family: Arimo;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1d1d1d;
+  margin-top: 107px;
+  margin-bottom: 115px;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+.cards-list > .card {
+  height: 280px;
+  width: 295px;
+  margin-right: 20px;
+}
+
+.cards-list > .card > p {
+  font-family: Arimo;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.testimonials {
+  padding-left: 222px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 222px;
+  gap: 100px;
+  margin-bottom: 116px;
+}
+
+.testimonials > h3 {
+  font-family: Arimo;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial > img {
+  margin-right: 48px;
+}
+
+.testimonial-details > span > img {
+  height: 27.999998092651367px;
+  width: 37px;
+  left: 5px;
+  top: 9.0006103515625px;
+  border-radius: 0px;
+  margin-bottom: 23px;
+}
+
+.testimonial-details > p {
+  font-family: Baloo;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+.testimonial-details > .author {
+  color: #1d1d1d;
+  font-family: Arimo;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
