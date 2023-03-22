@@ -6,8 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h2>Cart</h2>
-    <p>this is description</p>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./resources/images/logo.svg"
+              alt="logo"
+              width="156"
+              height="44"
+            />
+          </a>
+        </div>
+        <div class="">
+          <img class="navbar-toggler" src="./resources/images/usericon.svg" />
+          <img class="navbar-toggler" src="./resources/images/cart.svg" />
+          <img class="navbar-toggler" src="./resources/images/hamburger.svg" />
+        </div>
+        <div class="navbar-nav">
+          <a href="./index.html">HOME</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./contact.html">CONTACT US</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="breadcrumb">
+        <p>home / shopping cart</p>
+      </div>
+      <div class="products-list">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>Plain White Shirt</td>
+            <td>$59.00</td>
+            <td class="quantity">1</td>
+            <td>$59.00</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+        </table>
+      </div>
+      <div class="cart-totals">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$59.00</td>
+          </tr>
+          <tr>
+            <td>Shipping Free</td>
+            <td>FREE!!</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$59.00</td>
+          </tr>
+        </table>
+        <a href="./checkout.html">PROCEED TO CHECKOUT</a>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Latest Posts</li>
+            <li>Contact Us</li>
+            <li>Shop</li>
+          </ul>
+        </div>
+        <div>
+          <h4>HELP LINKS</h4>
+          <ul>
+            <li>Tracking</li>
+            <li>Order Status</li>
+            <li>Delivery</li>
+            <li>Shipping Info</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li>Special Links</li>
+            <li>Gift Cards</li>
+            <li>Advertising</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div>
+          <h4>GET IN THE KNOW</h4>
+          <input type="email" placeholder="Enter Email" />
+          <span class="arrow"></span>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-copyrights">
+        <div>
+          <p>© 2020 NorthStar eCommerce</p>
+          <p>Privacy Policy Terms & Conditions</p>
+        </div>
+        <div>
+          <img src="./resources/images/footer/1st_footer_icons.svg" />
+          <img src="./resources/images/footer/2nd_footer_icon.svg" />
+          <img src="./resources/images/footer/3rd_footer_icon.svg" />
+          <img src="./resources/images/footer/4th_footer_icon.svg" />
+        </div>
+      </div>
+    </footer>
     <script type="module" src="main.js"></script>
   </body>
 </html>
