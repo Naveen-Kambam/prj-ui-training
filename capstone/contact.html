@@ -26,7 +26,7 @@
             />
           </a>
         </div>
-        <div class="navbar-nav">
+        <div id="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
@@ -45,6 +45,7 @@
             src="./resources/images/hamburger.svg"
             width="18px"
             height="18px"
+            onclick="myFunction()"
           />
         </div>
       </nav>
@@ -123,8 +124,16 @@
         </div>
         <div>
           <h4>GET IN THE KNOW</h4>
-          <input type="email" placeholder="Enter Email" />
-          <span class="arrow"></span>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <span class="arrow"
+              ><img src="./resources/images/footer/arrow.svg"
+            /></span>
+          </div>
         </div>
       </div>
       <hr />

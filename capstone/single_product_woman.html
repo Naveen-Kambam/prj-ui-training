@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" type="text/css" href="./footer.css" />
     <link rel="stylesheet" type="text/css" href="./product.css" />
+    <script src="product.js"></script>
   </head>
   <body>
     <header>
@@ -25,7 +26,7 @@
             />
           </a>
         </div>
-        <div class="navbar-nav">
+        <div id="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
@@ -44,6 +45,7 @@
             src="./resources/images/hamburger.svg"
             width="18px"
             height="18px"
+            onclick="myFunction()"
           />
         </div>
       </nav>
@@ -52,52 +54,84 @@
       <div class="product-details">
         <img src="./resources/images/products/product-1.jpg" />
         <div>
-          <p>HOME / SHOP / WOMEN / <span class="current">SHOP</span></p>
-          <h3>Plain White Shirt</h3>
-          <div>
-            <img src="./resources/images/products/icon.svg" />
-            <img src="./resources/images/products/icon.svg" />
-            <img src="./resources/images/products/icon.svg" />
-            <img src="./resources/images/products/icon.svg" />
-            <span>(15)</span>
+          <div class="breadcrumb">
+            <p>HOME / SHOP / WOMEN / <span class="current">SHOP</span></p>
           </div>
-          <div class="price-list">
-            <p><s>$69.00</s> <span class="latest">$59.00</span></p>
+          <div class="details-section">
+            <h3>Plain White Shirt</h3>
+            <div>
+              <img src="./resources/images/products/icon.svg" />
+              <img src="./resources/images/products/icon.svg" />
+              <img src="./resources/images/products/icon.svg" />
+              <img src="./resources/images/products/icon.svg" />
+              <span>(15)</span>
+            </div>
+            <div class="price-list">
+              <p><s>$69.00</s> <span class="latest">$59.00</span></p>
+            </div>
+            <p class="product-description">
+              A classic t-shirt never goes out of style. This is our most
+              premium collection of shirt. This plain white shirt is made up of
+              pure cotton and has a premium finish.
+            </p>
+            <select>
+              <option value="">Select Size</option>
+            </select>
+            <button>ADD TO CART</button>
+            <div class="tags">
+              <p>Category: <span>Women, Polo, Casual</span></p>
+              <p>Tags: <span>Modern, Design, cotton</span></p>
+            </div>
+            <div class="colors">
+              <img src="./resources/images/products/Ellipse.svg" />
+              <img src="./resources/images/products/Ellipse.svg" />
+              <img src="./resources/images/products/Ellipse.svg" />
+              <img src="./resources/images/products/Ellipse.svg" />
+              <img src="./resources/images/products/Ellipse.svg" />
+            </div>
           </div>
-          <p class="product-description">
-            A classic t-shirt never goes out of style. This is our most premium
-            collection of shirt. This plain white shirt is made up of pure
-            cotton and has a premium finish.
-          </p>
-          <select>
-            <option value="">Select Size</option>
-          </select>
-          <button>ADD TO CART</button>
-          <div class="tags">
-            <p>Category: <span>Women, Polo, Casual</span></p>
-            <p>Tags: <span>Modern, Design, cotton</span></p>
-          </div>
-          <div class="colors"></div>
         </div>
       </div>
       <div class="tabs">
-        <ul>
-          <li>Description</li>
-          <li>Reviews(0)</li>
-        </ul>
-        <div>
+        <div class="tab">
+          <button class="tablinks active" onclick="openTab(event, 'Tab1')">
+            Description
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'Tab2')">
+            Reviews(0)
+          </button>
+        </div>
+
+        <div id="Tab1" class="tabcontent show">
           <p>
-            A key objective is engaging digital marketing customers and allowing
-            them to interact with the brand through servicing and delivery of
-            digital media. Information is easy to access at a fast rate through
-            the use of digital communications. Users with access to the Internet
-            can use many digital mediums, such as Facebook, YouTube, Forums, and
-            Email etc. Through Digital communications it creates a
-            Multi-communication channel where information can be quickly
-            exchanged around the world by anyone without any regard to whom they
-            are.[28] Social segregation plays no part through social mediums due
-            to lack of face to face communication and information being wide
-            spread instead to a selective audience.
+            Description : A key objective is engaging digital marketing
+            customers and allowing them to interact with the brand through
+            servicing and delivery of digital media. Information is easy to
+            access at a fast rate through the use of digital communications.
+            Users with access to the Internet can use many digital mediums, such
+            as Facebook, YouTube, Forums, and Email etc. Through Digital
+            communications it creates a Multi-communication channel where
+            information can be quickly exchanged around the world by anyone
+            without any regard to whom they are.[28] Social segregation plays no
+            part through social mediums due to lack of face to face
+            communication and information being wide spread instead to a
+            selective audience.
+          </p>
+        </div>
+
+        <div id="Tab2" class="tabcontent">
+          <p>
+            Reviews(0) : A key objective is engaging digital marketing customers
+            and allowing them to interact with the brand through servicing and
+            delivery of digital media. Information is easy to access at a fast
+            rate through the use of digital communications. Users with access to
+            the Internet can use many digital mediums, such as Facebook,
+            YouTube, Forums, and Email etc. Through Digital communications it
+            creates a Multi-communication channel where information can be
+            quickly exchanged around the world by anyone without any regard to
+            whom they are.[28] Social segregation plays no part through social
+            mediums due to lack of face to face communication and information
+            being wide spread instead to a selective audience.
           </p>
         </div>
       </div>
@@ -134,8 +168,16 @@
         </div>
         <div>
           <h4>GET IN THE KNOW</h4>
-          <input type="email" placeholder="Enter Email" />
-          <span class="arrow"></span>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <span class="arrow"
+              ><img src="./resources/images/footer/arrow.svg"
+            /></span>
+          </div>
         </div>
       </div>
       <hr />

@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Assignment/navigation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./cart.css" />
   </head>
   <body>
     <header>
@@ -18,7 +25,7 @@
             />
           </a>
         </div>
-        <div class="navbar-nav">
+        <div id="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
@@ -37,50 +44,50 @@
             src="./resources/images/hamburger.svg"
             width="18px"
             height="18px"
+            onclick="myFunction()"
           />
         </div>
       </nav>
     </header>
     <main>
       <div class="breadcrumb">
-        <p>home / shopping cart</p>
+        <p>HOME / <span class="current">SHOPPING CART</span></p>
       </div>
       <div class="products-list">
         <table>
-          <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-          </tr>
-          <tr>
-            <td>Plain White Shirt</td>
-            <td>$59.00</td>
-            <td class="quantity">1</td>
-            <td>$59.00</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
+          <tbody class="product-list">
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Plain White Shirt</td>
+              <td>$59.00</td>
+              <td class="quantity">1</td>
+              <td>$59.00</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div class="cart-totals">
         <h3>Cart Totals</h3>
         <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$59.00</td>
-          </tr>
-          <tr>
-            <td>Shipping Free</td>
-            <td>FREE!!</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$59.00</td>
-          </tr>
+          <tbody class="product-list cart-list">
+            <tr>
+              <td>Subtotal</td>
+              <td>$59.00</td>
+            </tr>
+            <tr>
+              <td>Shipping Free</td>
+              <td>FREE!!</td>
+            </tr>
+            <tr>
+              <td class="current">Total</td>
+              <td>$59.00</td>
+            </tr>
+          </tbody>
         </table>
         <a href="./checkout.html">PROCEED TO CHECKOUT</a>
       </div>
@@ -117,8 +124,16 @@
         </div>
         <div>
           <h4>GET IN THE KNOW</h4>
-          <input type="email" placeholder="Enter Email" />
-          <span class="arrow"></span>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <span class="arrow"
+              ><img src="./resources/images/footer/arrow.svg"
+            /></span>
+          </div>
         </div>
       </div>
       <hr />

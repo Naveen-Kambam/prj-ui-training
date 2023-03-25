@@ -1,8 +1,14 @@
 .benefits {
-  height: 211px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  height: auto;
+  position: relative;
+  top: 90px;
+  gap: 20px;
 }
 
 .benefit {
@@ -38,4 +44,22 @@
   letter-spacing: 0em;
   text-align: left;
   color: #555555;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 211px;
+    gap: 0px;
+  }
+  .benefit {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .benefit {
+    width: 233px;
+  }
 }

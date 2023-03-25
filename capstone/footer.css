@@ -1,13 +1,22 @@
 footer {
   background: #fbfbfb;
-  height: 486px;
+  height: auto;
   padding-top: 70px;
   box-sizing: border-box;
 }
 
 .quickLinks {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.quickLinks > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .quickLinks > div > h4 {
@@ -30,6 +39,10 @@ footer {
   text-align: left;
 }
 
+.quickLinks > div > span {
+  display: none;
+}
+
 footer > hr {
   margin-top: 70px;
 }
@@ -43,12 +56,19 @@ footer > hr {
   line-height: 48px;
   letter-spacing: 0em;
   text-align: left;
+  width: 80%;
 }
 
 .footer-copyrights {
   display: flex;
   justify-content: space-between;
-  padding: 32px 63px 0 63px;
+  padding: 32px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copyrights > div {
+  margin-bottom: 20px;
 }
 
 .footer-copyrights > div > p:first-child {
@@ -57,4 +77,40 @@ footer > hr {
 
 .footer-copyrights > div > img {
   margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .quickLinks {
+    justify-content: space-around;
+  }
+
+  /* .quickLinks > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 20px;
+  }*/
+
+  .quickLinks > div > span {
+    display: block;
+  }
+
+  .footer-copyrights {
+    padding: 32px 63px 32px 63px;
+    flex-direction: row;
+  }
+
+  .footer-copyrights > div {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quickLinks {
+    justify-content: space-evenly;
+  }
+  .quickLinks > div {
+    width: auto;
+  }
 }

@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Assignment/navigation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./checkout.css" />
   </head>
   <body>
     <header>
@@ -18,7 +25,7 @@
             />
           </a>
         </div>
-        <div class="navbar-nav">
+        <div id="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
@@ -37,13 +44,14 @@
             src="./resources/images/hamburger.svg"
             width="18px"
             height="18px"
+            onclick="myFunction()"
           />
         </div>
       </nav>
     </header>
     <main>
       <div class="breadcrumb">
-        <p>home / shopping cart</p>
+        <p>HOME / <span class="current">CHECKOUT</span></p>
       </div>
       <div class="billing-details">
         <form>
@@ -75,7 +83,6 @@
               class="form-control"
               id="town"
               aria-describedby="town/city"
-              placeholder="House number and street name"
               required
             />
           </div>
@@ -100,36 +107,37 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="order">
+            <h3>Your Order</h3>
+            <table>
+              <tbody class="order-list">
+                <tr>
+                  <th>Product</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td>Plain white shirt</td>
+                  <td>$59.00</td>
+                </tr>
+                <tr>
+                  <td>Subtotal</td>
+                  <td>$59.00</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="current">$59.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="placeorder">
+            <p>
+              Cash on delivery. Please contact us if you require assistance or
+              wish to make alternate arrangements.
+            </p>
+            <button type="submit" class="btn btn-primary">PLACE ORDER</button>
+          </div>
         </form>
-      </div>
-      <div class="order">
-        <h3>Your Order</h3>
-        <table>
-          <tr>
-            <th>Product</th>
-            <th>Total</th>
-          </tr>
-          <tr>
-            <td>Plain white shirt</td>
-            <td>$59.00</td>
-          </tr>
-          <tr>
-            <td>Subtotal</td>
-            <td>$59.00</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>$59.00</td>
-          </tr>
-        </table>
-      </div>
-      <div class="placeorder">
-        <p>
-          Cash on delivery. Please contact us if you require assistance or wish
-          to make alternate arrangements.
-        </p>
-        <button>PLACE ORDER</button>
       </div>
     </main>
     <footer>
@@ -164,8 +172,16 @@
         </div>
         <div>
           <h4>GET IN THE KNOW</h4>
-          <input type="email" placeholder="Enter Email" />
-          <span class="arrow"></span>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <span class="arrow"
+              ><img src="./resources/images/footer/arrow.svg"
+            /></span>
+          </div>
         </div>
       </div>
       <hr />

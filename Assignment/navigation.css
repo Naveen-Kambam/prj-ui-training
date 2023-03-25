@@ -10,6 +10,7 @@
 nav {
   background-color: rgba(248, 249, 250, 1);
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   padding: var(--ten-pixel);
@@ -29,61 +30,114 @@ nav {
   z-index: 1;
 }
 
-.navbar-brand {
-  padding: 22px 0 22px 65px;
+.navbar {
+  width: 100%;
 }
 
-.navbar-nav {
+.navbar-brand {
+  padding: 0px;
+}
+
+#navbar-nav {
   /* flex-grow: 1; */
   padding-left: 140px;
 }
 
 .nav-icons {
-  right: 0;
-  position: fixed;
+  display: flex;
+}
+
+.nav-icons {
+  /*right: 0;
+  position: fixed;*/
 }
 
 .nav-icons > img,
 .nav-icons > a {
-  padding-right: 37px;
-  cursor: pointer;
+  padding: 10px;
 }
 
 .navbar-toggler {
-  display: none;
+  display: block;
+  cursor: pointer;
 }
 
-.navbar-nav {
+#navbar-nav {
   /* flex-grow: 1; */
 }
 
-.navbar-nav > a {
-  text-decoration: none;
-  color: black;
-  padding: var(--ten-pixel);
+#navbar-nav {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 60px;
+  width: 100%;
+  left: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
+#navbar-nav > a {
+  display: block;
+  border: 1px solid #000;
+}
+
+.show {
+  display: block !important;
+  top: 88px !important;
+  padding: 0 !important;
+  background: #ffffff;
+}
+
+.navbar-toggler:hover + .navbar-nav {
+  display: flex;
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  /*.navbar {
+    width: 100%;
+  }*/
+
+  .navbar-brand {
+    padding: 22px 0 22px 65px;
+  }
+
+  /*.nav-icons {
+    display: flex;
+  }*/
+
+  .nav-icons > img,
+  .nav-icons > a {
+    padding-right: 37px;
     cursor: pointer;
   }
 
-  .navbar-nav {
+  .navbar-toggler {
     display: none;
-    position: absolute;
-    flex-direction: column;
-    top: 60px;
-    width: 100%;
-    left: 0;
   }
 
-  .navbar-nav > a {
-    border: 1px solid #000;
+  #navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border: 0;
+    position: unset;
+    width: auto;
   }
 
-  .navbar-toggler:hover + .navbar-nav {
+  #navbar-nav > a {
+    text-decoration: none;
+    color: black;
+    padding: var(--ten-pixel);
+    border: 0px;
+  }
+
+  /*.navbar-toggler:hover + .navbar-nav {
     display: flex;
     background: #fff;
-  }
+  }*/
 }
