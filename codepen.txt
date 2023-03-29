@@ -1,1 +1,11 @@
 https://codepen.io/frontenddevtrainer/pen/JjaaRyR
+
+{
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource', // EXAMPLE HERE
+      },
+	  
+	    {
+        test: /\.html$/,
+        loader: 'html-loader',
+      },

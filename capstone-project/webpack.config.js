@@ -44,8 +44,26 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+        },
+      },
+      {
+        test: /\.(gif|png|svg|jpg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'src/assets/images/',
+            },
+          },
+        ],
       },
     ],
   },

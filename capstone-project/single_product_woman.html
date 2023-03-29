@@ -4,10 +4,224 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="./navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />
+    <link rel="stylesheet" type="text/css" href="./product.css" />-->
+    <script src="product.js"></script>
   </head>
   <body>
-    <h2>Single Product Woman</h2>
-    <p>this is description</p>
-    <script type="module" src="main.js"></script>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="src/assets/images/logo.svg"
+              alt="logo"
+              width="156"
+              height="44"
+            />
+          </a>
+        </div>
+        <div id="navbar-nav">
+          <a href="./index.html">HOME</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./contact.html">CONTACT US</a>
+        </div>
+        <div class="nav-icons">
+          <img
+            src="src/assets/images/usericon.svg"
+            width="18px"
+            height="18px"
+          />
+          <a href="./cart.html"
+            ><img src="src/assets/images/cart.svg" width="18px" height="18px"
+          /></a>
+          <img
+            class="navbar-toggler"
+            src="src/assets/images/hamburger.svg"
+            width="18px"
+            height="18px"
+            onclick="myFunction()"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="product-details">
+        <img src="src/assets/images/product-1.jpg" />
+        <div>
+          <div class="breadcrumb">
+            <p>
+              HOME / SHOP / WOMEN /
+              <span class="current" aria-current="page">SHOP</span>
+            </p>
+          </div>
+          <div class="details-section">
+            <h3>Plain White Shirt</h3>
+            <div>
+              <img src="src/assets/images/icon.svg" />
+              <img src="src/assets/images/icon.svg" />
+              <img src="src/assets/images/icon.svg" />
+              <img src="src/assets/images/icon.svg" />
+              <span>(15)</span>
+            </div>
+            <div class="price-list">
+              <p><s>$69.00</s> <span class="latest">$59.00</span></p>
+            </div>
+            <p class="product-description">
+              A classic t-shirt never goes out of style. This is our most
+              premium collection of shirt. This plain white shirt is made up of
+              pure cotton and has a premium finish.
+            </p>
+            <select>
+              <option value="">Select Size</option>
+            </select>
+            <button>ADD TO CART</button>
+            <div class="tags">
+              <p>Category: <span>Women, Polo, Casual</span></p>
+              <p>Tags: <span>Modern, Design, cotton</span></p>
+            </div>
+            <div class="colors">
+              <img src="src/assets/images/Ellipse.svg" />
+              <img src="src/assets/images/Ellipse.svg" />
+              <img src="src/assets/images/Ellipse.svg" />
+              <img src="src/assets/images/Ellipse.svg" />
+              <img src="src/assets/images/Ellipse.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs">
+        <div class="tab" role="tablist" aria-label="Product Description Tabs">
+          <button
+            class="tablinks active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-1"
+            id="tab-1"
+            tabindex="0"
+            onclick="openTab(event, 'Tab1')"
+          >
+            Description
+          </button>
+          <button
+            class="tablinks"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-2"
+            id="tab-2"
+            tabindex="-1"
+            onclick="openTab(event, 'Tab2')"
+          >
+            Reviews(0)
+          </button>
+        </div>
+
+        <div
+          id="Tab1 panel-1"
+          class="tabcontent show"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="tab-1"
+        >
+          <p>
+            Description : A key objective is engaging digital marketing
+            customers and allowing them to interact with the brand through
+            servicing and delivery of digital media. Information is easy to
+            access at a fast rate through the use of digital communications.
+            Users with access to the Internet can use many digital mediums, such
+            as Facebook, YouTube, Forums, and Email etc. Through Digital
+            communications it creates a Multi-communication channel where
+            information can be quickly exchanged around the world by anyone
+            without any regard to whom they are.[28] Social segregation plays no
+            part through social mediums due to lack of face to face
+            communication and information being wide spread instead to a
+            selective audience.
+          </p>
+        </div>
+
+        <div
+          id="Tab2 panel-2"
+          class="tabcontent"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="tab-2"
+        >
+          <p>
+            Reviews(0) : A key objective is engaging digital marketing customers
+            and allowing them to interact with the brand through servicing and
+            delivery of digital media. Information is easy to access at a fast
+            rate through the use of digital communications. Users with access to
+            the Internet can use many digital mediums, such as Facebook,
+            YouTube, Forums, and Email etc. Through Digital communications it
+            creates a Multi-communication channel where information can be
+            quickly exchanged around the world by anyone without any regard to
+            whom they are.[28] Social segregation plays no part through social
+            mediums due to lack of face to face communication and information
+            being wide spread instead to a selective audience.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="quickLinks">
+        <div>
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Latest Posts</li>
+            <li>Contact Us</li>
+            <li>Shop</li>
+          </ul>
+        </div>
+        <div>
+          <h4>HELP LINKS</h4>
+          <ul>
+            <li>Tracking</li>
+            <li>Order Status</li>
+            <li>Delivery</li>
+            <li>Shipping Info</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li>Special Links</li>
+            <li>Gift Cards</li>
+            <li>Advertising</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div>
+          <h4>GET IN THE KNOW</h4>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+              aria-label="Enter Email"
+            />
+            <button class="arrow">
+              <img src="src/assets/images/arrow.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-copyrights">
+        <div>
+          <p>© 2020 NorthStar eCommerce</p>
+          <p>Privacy Policy Terms & Conditions</p>
+        </div>
+        <div>
+          <img src="src/assets/images/1st_footer_icons.svg" />
+          <img src="src/assets/images/2nd_footer_icon.svg" />
+          <img src="src/assets/images/3rd_footer_icon.svg" />
+          <img src="src/assets/images/4th_footer_icon.svg" />
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="bundle.js"></script>
   </body>
 </html>

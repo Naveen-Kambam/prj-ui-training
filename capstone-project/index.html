@@ -4,6 +4,36 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/navigation.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/cards.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/benefits.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/promo.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/footer.css"
+    />-->
   </head>
   <body>
     <header>
@@ -11,32 +41,288 @@
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img
-              src="./resources/images/logo.svg"
+              src="src/assets/images/logo.svg"
               alt="logo"
               width="156"
               height="44"
             />
           </a>
         </div>
-        <div class="navbar-toggler">
-          <img src="./resources/images/cart.svg" />
-        </div>
-        <div class="navbar-nav">
+        <div id="navbar-nav">
           <a href="./index.html">HOME</a>
           <a href="./about.html">ABOUT</a>
           <a href="./contact.html">CONTACT US</a>
         </div>
+        <div class="nav-icons">
+          <img
+            src="src/assets/images/usericon.svg"
+            width="18px"
+            height="18px"
+          />
+          <a href="./cart.html"
+            ><img src="src/assets/images/cart.svg" width="18px" height="18px"
+          /></a>
+          <img
+            class="navbar-toggler"
+            src="src/assets/images/hamburger.svg"
+            width="18px"
+            height="18px"
+            onclick="myFunction()"
+          />
+        </div>
       </nav>
     </header>
-
-    <h2>Hello</h2>
-    <p>this is description</p>
-    <a href="./about.html">About Page </a>
-    <a href="./contact.html">Contact Page </a>
-    <a href="./single_product_man.html">Single Man Page </a>
-    <a href="./single_product_woman.html">Single Woman Page </a>
-    <a href="./cart.html">Cart Page </a>
-    <a href="./checkout.html">Checkout Page </a>
-    <script type="module" src="main.js"></script>
+    <main>
+      <div class="herobanner">
+        <h2 class="herobanner-header">STYLIST PICKS BEAT THE HEAT</h2>
+        <a class="herobanner-shopnow" href="./single_product_woman.html"
+          >SHOP NOW</a
+        >
+      </div>
+      <div class="cards">
+        <h3>Discover NEW Arrivals</h3>
+        <p>Recently Added shirts!</p>
+        <div class="cards-list">
+          <div class="card">
+            <img
+              src="src/assets/images/1st_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Plain White Shirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/2nd_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Denim Jacket</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/3rd_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Black Polo Shirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/4th_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Blue Sweatshirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/5th_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Blue Plain Shirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/6th_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Dark Blue Shirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/7th_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Outcast T Shirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+          <div class="card">
+            <img
+              src="src/assets/images/8th_card.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Polo Plain Shirt</h4>
+            <p class="price">$20.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="benefits">
+        <div class="benefit">
+          <img src="src/assets/images/1st_icon.svg" alt="free shpping" />
+          <div>
+            <p class="benefit-heading">FREE SHIPPING</p>
+            <p class="benefit-description">
+              Enjoy free shipping on all orders above $100
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <img src="src/assets/images/2nd_icon.svg" alt="support 24/7" />
+          <div>
+            <p class="benefit-heading">SUPPORT 24/7</p>
+            <p class="benefit-description">
+              Our support team is there to help you for queries
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <img src="src/assets/images/3rd_icon.svg" alt="30 days return" />
+          <div>
+            <p class="benefit-heading">30 DAYS RETURN</p>
+            <p class="benefit-description">
+              Simply return it within 30 days for an exchange
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <img
+            src="src/assets/images/4th_icon.svg"
+            alt="100 percent payment secure"
+          />
+          <div>
+            <p class="benefit-heading">100% PAYMENT SECURE</p>
+            <p class="benefit-description">
+              Our payments are secured with 256 bit encryption
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="promo">
+        <div class="left">
+          <div>
+            <h3>PEACE OF MIND</h3>
+            <p>
+              A one-stop platform for all your fashion needs, hassle-free. Buy
+              with a peace of mind.
+            </p>
+            <a href="#">BUY NOW</a>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+            <h3>BUY 2 GET 1 FREE</h3>
+            <p>
+              End of season sale. Buy any 2 items of your choice and get 1 free.
+            </p>
+            <a href="#">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <h3>TOP SELLERS</h3>
+        <p>Browse our top-selling products</p>
+        <div class="cards-list">
+          <a class="card" href="./single_product_man.html">
+            <img
+              src="src/assets/images/1st_topcard.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Gray Polo Shirt</h4>
+            <p class="price">$49.00</p>
+          </a>
+          <a class="card">
+            <img
+              src="src/assets/images/2nd_topcard.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Red Shirt</h4>
+            <p class="price">$69.00</p>
+          </a>
+          <a class="card">
+            <img
+              src="src/assets/images/3rd_topcard.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Polo White Shirt</h4>
+            <p class="price">$29.00</p>
+          </a>
+          <a class="card">
+            <img
+              src="src/assets/images/4th_topcard.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <h4>Pink Casual Shirt</h4>
+            <p class="price">$39.00</p>
+          </a>
+        </div>
+        <a href="#">SHOP NOW</a>
+      </div>
+    </main>
+    <footer>
+      <div class="quickLinks">
+        <div>
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Latest Posts</li>
+            <li>Contact Us</li>
+            <li>Shop</li>
+          </ul>
+        </div>
+        <div>
+          <h4>HELP LINKS</h4>
+          <ul>
+            <li>Tracking</li>
+            <li>Order Status</li>
+            <li>Delivery</li>
+            <li>Shipping Info</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li>Special Links</li>
+            <li>Gift Cards</li>
+            <li>Advertising</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div>
+          <h4>GET IN THE KNOW</h4>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+              aria-label="Enter Email"
+            />
+            <button class="arrow">
+              <img src="src/assets/images/arrow.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-copyrights">
+        <div>
+          <p>© 2020 NorthStar eCommerce</p>
+          <p>Privacy Policy Terms & Conditions</p>
+        </div>
+        <div>
+          <img src="src/assets/images/1st_footer_icons.svg" />
+          <img src="src/assets/images/2nd_footer_icon.svg" />
+          <img src="src/assets/images/3rd_footer_icon.svg" />
+          <img src="src/assets/images/4th_footer_icon.svg" />
+        </div>
+      </div>
+    </footer>
+    <!--<script src="navigation.js"></script>-->
+    <script type="module" src="bundle.js"></script>
   </body>
 </html>

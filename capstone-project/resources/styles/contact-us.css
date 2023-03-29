@@ -1,0 +1,157 @@
+.contact-us {
+  margin-top: 100px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 70px;
+}
+
+.contact-us > form {
+  display: flex;
+  padding: 0 32px 0 32px;
+  gap: 70px;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
+}
+
+form > .left-section > h3 {
+  font-family: Arimo;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+form > .left-section > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+form > .left-section > .user-details {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-details > div > label,
+.user-message > label {
+  display: block;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+}
+
+.user-details > div > input {
+  box-sizing: border-box;
+  width: 400px;
+  height: 58px;
+  left: 0px;
+  top: 28px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  width: 100%;
+}
+
+.user-message > textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 188px;
+  left: 0px;
+  top: 138px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+}
+
+form > .left-section > button {
+  margin-top: 24px;
+  margin-bottom: 0px;
+  width: 192px;
+  height: 58px;
+  left: 0px;
+  top: 350px;
+  background: #024e82;
+  color: #ffffff;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 3px;
+}
+
+form > .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.right-section > div > h4 {
+  font-family: "Arimo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  color: #1d1d1d;
+  margin-bottom: 16px;
+}
+
+.right-section > div > p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us > form {
+    width: auto;
+    padding: 0 63px 0 63px;
+  }
+
+  form > .left-section > .user-details {
+    flex-direction: row;
+  }
+
+  .user-details > div > input {
+    width: 400px;
+    width: 300px;
+  }
+
+  .user-message > textarea {
+    width: 640px;
+  }
+
+  form > .left-section > button {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-us > form {
+    flex-direction: row;
+  }
+
+  .user-details > div > input {
+    width: 400px;
+  }
+
+  .user-message > textarea {
+    width: 820px;
+  }
+
+  form > .left-section > button {
+    margin-bottom: 110px;
+  }
+}

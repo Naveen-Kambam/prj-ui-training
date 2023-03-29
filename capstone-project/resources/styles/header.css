@@ -1,0 +1,71 @@
+.herobanner {
+  height: 648px;
+  background: url(http://localhost:8080/src/assets/images/herobanner.jpg);
+  background-position: center;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  top: 88px;
+  position: relative;
+}
+
+.contact {
+  height: 348px;
+  background: url(http://localhost:8080/src/assets/images/contact-us-banner.jpg);
+}
+
+.herobanner-header {
+  height: 104px;
+  left: 0;
+  width: auto;
+  top: 296px;
+  font-size: 48px;
+  position: absolute;
+}
+
+.herobanner-shopnow {
+  position: absolute;
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  top: 400px;
+  border: 2px solid;
+  text-decoration: none;
+  text-align: center;
+  right: 125px;
+
+  color: #ffffff;
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .herobanner {
+    /*background-size: cover;
+    top: 88px;
+    position: relative;*/
+  }
+
+  .herobanner-header {
+    /* width: 492.42095947265625px;
+    left: 770.02734375px;*/
+  }
+
+  .herobanner-shopnow {
+    right: 282px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .herobanner-header {
+    width: 492.42095947265625px;
+    left: 770.02734375px;
+  }
+}

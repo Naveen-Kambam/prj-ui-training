@@ -1,0 +1,156 @@
+/*main {
+  top: 88px;
+  position: relative;
+}
+*/
+
+.checkout-page {
+  top: 88px;
+  position: relative;
+}
+.breadcrumb {
+  padding-left: 63px;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  font-family: Arimo;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.25px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.breadcrumb > p {
+  color: #888888;
+}
+
+.breadcrumb > p > .current {
+  color: #1d1d1d;
+}
+
+.billing-details {
+  margin-left: 0px;
+}
+
+.billing-details > form,
+.form-group > input {
+  width: 100%;
+}
+
+.billing-details > form > .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.current {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1d1d1d !important;
+}
+
+.form-group > label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+.form-group > input {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 17px;
+}
+
+.order {
+  margin-top: 51px;
+  font-family: "Arimo";
+  font-style: normal;
+  color: #1d1d1d;
+  margin-bottom: 44px;
+}
+
+.order > h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 44px;
+}
+
+.order > table {
+  padding-right: 0px;
+  width: 100%;
+}
+
+.order-list > tr {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  height: 66.17px;
+  display: flex;
+  align-items: center;
+}
+
+.order-list > tr > td,
+.order-list > tr > th {
+  width: 50%;
+  text-align: left;
+  padding-left: 16px;
+  color: #555555;
+}
+
+.order-list > tr > th {
+  color: #1d1d1d;
+}
+
+.placeorder {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 33px 24px 135px 24px;
+}
+
+.placeorder > p {
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+  padding: 24px;
+  margin-bottom: 33px;
+}
+
+.placeorder > button {
+  position: absolute;
+  right: 61px;
+  height: 48px;
+  background: #d6763c;
+  color: #ffffff;
+  padding: 14px 36px;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-group > input {
+    width: 620px;
+  }
+
+  .billing-details {
+    margin-left: 63px;
+  }
+
+  .order > table {
+    padding-right: 63px;
+  }
+}

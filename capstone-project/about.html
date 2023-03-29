@@ -4,10 +4,191 @@
     <meta charset="utf-8" />
     <title>welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--<link rel="stylesheet" type="text/css" href="./navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./about-header.css" />
+    <link rel="stylesheet" type="text/css" href="./cards.css" />
+    <link rel="stylesheet" type="text/css" href="./footer.css" />-->
   </head>
   <body>
-    <h2>About</h2>
-    <p>this is description</p>
-    <script type="module" src="main.js"></script>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="src/assets/images/logo.svg"
+              alt="logo"
+              width="156"
+              height="44"
+            />
+          </a>
+        </div>
+        <div id="navbar-nav">
+          <a href="./index.html">HOME</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./contact.html">CONTACT US</a>
+        </div>
+        <div class="nav-icons">
+          <img
+            src="src/assets/images/usericon.svg"
+            width="18px"
+            height="18px"
+          />
+          <a href="./cart.html"
+            ><img src="src/assets/images/cart.svg" width="18px" height="18px"
+          /></a>
+          <img
+            class="navbar-toggler"
+            src="src/assets/images/hamburger.svg"
+            width="18px"
+            height="18px"
+            onclick="myFunction()"
+          />
+        </div>
+      </nav>
+    </header>
+  <main class="about">
+    <div class="herobanner">
+      <h2 class="herobanner-header">About Northstar</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <img src="src/assets/images/features1.jpg" width="600" height="600" />
+        <a href="#">BUY NOW</a>
+      </div>
+      <div class="feature">
+        <img src="src/assets/images/features2.jpg" width="600" height="600" />
+        <a href="#">BUY NOW</a>
+      </div>
+    </div>
+    <div class="founders">
+      <h3>The Founders</h3>
+      <div class="cards-list">
+        <div class="card">
+          <img
+            src="src/assets/images/founder_1.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <h4>HM Jawad</h4>
+        </div>
+        <div class="card">
+          <img
+            src="src/assets/images/founder_2.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <h4>Furqan Abid</h4>
+        </div>
+        <div class="card">
+          <img
+            src="src/assets/images/founder_3.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <h4>Abdullah Ah</h4>
+        </div>
+        <div class="card">
+          <img
+            src="src/assets/images/founder_4.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <h4>Abrar Khan</h4>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <h3>TESTIMONIALS</h3>
+      <div class="testimonial">
+        <img src="src/assets/images/testimonial_1.jpg" width="210px" height="210px" />
+        <div class="testimonial-details">
+          <span><img src="src/assets/images/quote2.svg" /></span>
+          <p>
+            Once we ordered some accessories items and we got the products
+            delivered in our doorstep, the customer support was super helpful
+            and they answered all my queries.
+          </p>
+          <p class="author">Stacy</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="src/assets/images/testimonial_2.jpg" width="210px" height="210px" />
+        <div class="testimonial-details">
+          <span><img src="src/assets/images/quote2.svg" /></span>
+          <p>
+            I ordered 5 shirts from them and received them in no time. The customer support was awesome!
+          </p>
+          <p class="author">Tiffany</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="src/assets/images/testimonial_3.jpg" width="210px" height="210px" />
+        <div class="testimonial-details">
+          <span><img src="src/assets/images/quote2.svg" /></span>
+          <p>
+            I got a wrong shirt so I contacted them and they happily offered me a refund. I will surely shop from them again.
+          </p>
+          <p class="author">James</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="quickLinks">
+        <div>
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Latest Posts</li>
+            <li>Contact Us</li>
+            <li>Shop</li>
+          </ul>
+        </div>
+        <div>
+          <h4>HELP LINKS</h4>
+          <ul>
+            <li>Tracking</li>
+            <li>Order Status</li>
+            <li>Delivery</li>
+            <li>Shipping Info</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li>Special Links</li>
+            <li>Gift Cards</li>
+            <li>Advertising</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div>
+          <h4>GET IN THE KNOW</h4>
+          <div>
+            <input
+              class="footer-email"
+              type="email"
+              placeholder="Enter Email"
+              aria-label="Enter Email"
+            />
+            <button class="arrow"><img src="src/assets/images/arrow.svg" /></button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-copyrights">
+        <div>
+          <p>© 2020 NorthStar eCommerce</p>
+          <p>Privacy Policy Terms & Conditions</p>
+        </div>
+        <div>
+          <img src="src/assets/images/1st_footer_icons.svg" />
+          <img src="src/assets/images/2nd_footer_icon.svg" />
+          <img src="src/assets/images/3rd_footer_icon.svg" />
+          <img src="src/assets/images/4th_footer_icon.svg" />
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="bundle.js"></script>
   </body>
 </html>
